@@ -75,9 +75,41 @@ function FITAN() {
                     }));
                 });
             }
-
+            
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = `
+            .fitan-modal { display: none; 
+                position: fixed; 
+                z-index: 1; 
+                left: 0; 
+                top: 0; 
+                width: 100%; 
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.4);
+            }
+            .fitan-modal-content {
+                background-color: #fff;
+                margin: 15% auto;
+                padding: 20px;
+                width: 80%;
+            }
+            .close {
+                background-color: #1e90ff;
+                color: #fff;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .tp {
+                color: #fff;
+                background-color: #adff2f
+                font-size: 28px;
+            }
+            `;
+            document.body.appendChild(css);
             CHAT.addEventHandlerHook(eventHandler);
-
             handleLoadedEvents(eventHandler);
         }
     };
