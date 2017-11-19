@@ -1,9 +1,9 @@
-// ==Userscript==
+// ==UserScript==
 // @name        FITAN
 // @namespace   tag:hilarylau12342@gmail.com,2017-11-19:fitan
 // @description Script to feedback instantly to Natty
 // @include     https://chat.stackoverflow.com/rooms/111347/sobotics
-// ==/Userscript==
+// ==/UserScript==
 
 var nattyMsg = document.querySelectAll('.user-container,.user-6817005,.monolouge');
 [].forEach.call(nodeList, function(msgs) {
