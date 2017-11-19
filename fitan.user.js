@@ -1,8 +1,11 @@
 // ==UserScript==
 // @name        FITAN
-// @namespace   tag:hilarylau12342@gmail.com,2017-11-19:fitan
+// @namespace   https://github.com/paper1111/userscripts
+// @version     0.1
 // @description Script to feedback instantly to Natty
 // @include     https://chat.stackoverflow.com/rooms/111347/sobotics
+// @downloadURL https://github.com/SOBotics/Userscripts/blob/master/Natty/NattyReporter.user.js
+// @author      paper1111
 // ==/UserScript==
 
 var nattyMsg = document.querySelectAll('.user-container,.user-6817005,.monolouge');
