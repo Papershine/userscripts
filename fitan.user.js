@@ -107,6 +107,11 @@ function FITAN() {
                 background-color: #adff2f
                 font-size: 28px;
             }
+            .ne {
+                color: #fff
+                background-color: #ffff00
+                font-size: 28px;
+            }
             `;
             document.body.appendChild(css);
             CHAT.addEventHandlerHook(eventHandler);
